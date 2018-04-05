@@ -21,8 +21,6 @@ namespace SENAI.BrownFit_Thanara.Data.Context
 
         public DbSet<Personal> Personais { get; set; }
 
-        public DbSet<Enderecos> Enderecos { get; set; }
-
         public override int SaveChanges()
         {
             //Faz um foreach na classes e verifica qual classe possui uma propriedade

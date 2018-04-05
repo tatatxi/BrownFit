@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SENAI.BrownFit_Thanara.Models.Models
 {
@@ -21,7 +17,7 @@ namespace SENAI.BrownFit_Thanara.Models.Models
         public Guid AdminId { get; set; }
 
         [StringLength(50, MinimumLength = 5)]
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "int")]
         [Required]
         public string Matricula { get; set; }
 

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static SENAI.BrownFit_Thanara.Models.Models.Enderecos;
 
 namespace SENAI.BrownFit_Thanara.Models.Models
 {
+    [Table("Alunos")]
     public class Aluno
     {
         public Aluno()
@@ -24,30 +20,28 @@ namespace SENAI.BrownFit_Thanara.Models.Models
 
         [StringLength(50, MinimumLength = 2)]
         [Required(ErrorMessage = "O Nome do Aluno é obrigatório.")]
-        [MaxLength(60, ErrorMessage = "O Nome do Perfil deve conter no máximo 20 caracteres.")]
-        [MinLength(2, ErrorMessage = "O Nome do Perfil deve conter no mínimo 2 caracteres.")]
         [Column(TypeName = "varchar")]
         [DisplayName("Nome do Aluno: ")]
         public string Nome { get; set; }
 
         [StringLength(50, MinimumLength = 2)]
-        [Required]
+        [Required(ErrorMessage = "O Sobrenome do Aluno é obrigatório.")]
         [Column(TypeName = "varchar")]
         [DisplayName("Sobrenome do Aluno: ")]
         public string Sobrenome { get; set; }
 
         [StringLength(11, MinimumLength = 11)]
-        [Required]
+        [Required(ErrorMessage = "O CPF é obrigatório.")]
         public string CPF { get; set; }
 
         [StringLength(50, MinimumLength = 5)]
-        [Required]
+        [Required(ErrorMessage = "O E-mail é obrigatório.")]
         [DisplayName("E-mail do Aluno: ")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
         [DataType(DataType.Date)]
-        [Required]
+        [Required(ErrorMessage = "Data de nascimento é obrigatório.")]
         [DisplayName("Data de Nascimento: ")]
         public DateTime DataNascimento { get; set; }
 
@@ -68,15 +62,15 @@ namespace SENAI.BrownFit_Thanara.Models.Models
         public string Permissao { get; set; }
 
         [StringLength(11, MinimumLength = 11)]
-        [Required]
+        [Required(ErrorMessage = "Peso é obrigatório.")]
         public string Peso { get; set; }
 
         [StringLength(11, MinimumLength = 11)]
-        [Required]
+        [Required(ErrorMessage = "Altura é obrigatório.")]
         public string Altura { get; set; }
 
         [StringLength(11, MinimumLength = 11)]
-        [Required]
+        [Required(ErrorMessage = "Massa corporal é obrigatório.")]
         [DisplayName("Massa Corporal: ")]
         public string MassaMagra { get; set; }
 
@@ -88,8 +82,6 @@ namespace SENAI.BrownFit_Thanara.Models.Models
 
         [DisplayName("Sugestão para aluno: ")]
         public string Sugestao { get; set; }
-
-        public virtual List<Endereco> Enderecos { get; set; }
 
         //Um aluno pode ter um professor
         public Guid PersonalId { get; set; }

@@ -1,14 +1,10 @@
-﻿using SENAI.BrownFit_Thanara.Models.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SENAI.BrownFit_Thanara.Models.Models
 {
+    [Table("Recepcionistas")]
     public class Recepcionista
     {
         public Recepcionista()
@@ -21,7 +17,7 @@ namespace SENAI.BrownFit_Thanara.Models.Models
         public Guid RecepcionistaId { get; set; }
 
         [StringLength(50, MinimumLength = 5)]
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "int")]
         [Required]
         public string Matricula { get; set; }
 
