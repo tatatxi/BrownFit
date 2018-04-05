@@ -1,0 +1,5 @@
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Util\bin\Debug\SENAI.BrownFit_Thanara.Util.dll
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Util\bin\Debug\SENAI.BrownFit_Thanara.Util.pdb
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Util\obj\Debug\SENAI.BrownFit_Thanara.Util.dll
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Util\obj\Debug\SENAI.BrownFit_Thanara.Util.pdb
+C:\Users\Aluno\Documents\Visual Studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Util\obj\Debug\SENAI.BrownFit_Thanara.Util.csprojResolveAssemblyReference.cache

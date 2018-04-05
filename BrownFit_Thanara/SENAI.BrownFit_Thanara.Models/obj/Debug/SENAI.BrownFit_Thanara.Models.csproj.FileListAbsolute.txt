@@ -1,0 +1,4 @@
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Models\bin\Debug\SENAI.BrownFit_Thanara.Models.dll
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Models\bin\Debug\SENAI.BrownFit_Thanara.Models.pdb
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Models\obj\Debug\SENAI.BrownFit_Thanara.Models.dll
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Models\obj\Debug\SENAI.BrownFit_Thanara.Models.pdb

@@ -1,0 +1,14 @@
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\obj\Debug\SENAI.BrownFit_Thanara.Data.csprojResolveAssemblyReference.cache
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\SENAI.BrownFit_Thanara.Data.dll.config
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\SENAI.BrownFit_Thanara.Data.dll
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\SENAI.BrownFit_Thanara.Data.pdb
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\EntityFramework.dll
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\SENAI.BrownFit_Thanara.Models.dll
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\SENAI.BrownFit_Thanara.Util.dll
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\SENAI.BrownFit_Thanara.Models.pdb
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\SENAI.BrownFit_Thanara.Util.pdb
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\EntityFramework.xml
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\obj\Debug\SENAI.BrownFit_Thanara.Data.dll
+c:\users\aluno\documents\visual studio 2015\Projects\BrownFit_Thanara\SENAI.BrownFit_Thanara.Data\obj\Debug\SENAI.BrownFit_Thanara.Data.pdb

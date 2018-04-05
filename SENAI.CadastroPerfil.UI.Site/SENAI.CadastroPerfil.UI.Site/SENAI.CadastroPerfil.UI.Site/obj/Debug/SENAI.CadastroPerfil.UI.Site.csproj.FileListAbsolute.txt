@@ -1,0 +1,231 @@
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\ApplicationInsights.config
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\csc.exe
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\System.Collections.Immutable.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\vbc.exe
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\VBCSCompiler.exe
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\VBCSCompiler.exe.config
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.dll.config
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.pdb
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Antlr3.Runtime.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.SqlServer.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Web.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.WindowsServer.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.ApplicationInsights.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.Web.Infrastructure.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Newtonsoft.Json.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Helpers.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Mvc.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Optimization.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Razor.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Deployment.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Razor.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\WebGrease.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.SqlServer.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Web.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.WindowsServer.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.ApplicationInsights.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Helpers.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Mvc.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Optimization.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Razor.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Deployment.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Razor.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Antlr3.Runtime.pdb
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Newtonsoft.Json.xml
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.csprojResolveAssemblyReference.cache
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.dll
+c:\users\tom\documents\visual studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.pdb
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\ApplicationInsights.config
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\csc.exe
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\System.Collections.Immutable.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\System.Reflection.Metadata.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\vbc.exe
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\VBCSCompiler.exe
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\VBCSCompiler.exe.config
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.dll.config
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.pdb
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Antlr3.Runtime.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.SqlServer.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Agent.Intercept.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.DependencyCollector.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Web.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.WindowsServer.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.ApplicationInsights.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.Web.Infrastructure.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Newtonsoft.Json.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Helpers.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Mvc.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Optimization.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Razor.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Deployment.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Razor.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\WebGrease.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.SqlServer.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.DependencyCollector.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Web.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.WindowsServer.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.ApplicationInsights.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Helpers.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Mvc.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Optimization.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Razor.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Deployment.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Razor.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Antlr3.Runtime.pdb
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Newtonsoft.Json.xml
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.csprojResolveAssemblyReference.cache
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.dll
+E:\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.pdb
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\ApplicationInsights.config
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\csc.exe
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\vbc.exe
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\VBCSCompiler.exe
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.dll.config
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.pdb
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Antlr3.Runtime.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.SqlServer.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Web.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Newtonsoft.Json.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Helpers.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Mvc.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Optimization.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Razor.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Razor.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\WebGrease.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.SqlServer.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Web.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Helpers.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Mvc.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Optimization.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Razor.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Razor.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Antlr3.Runtime.pdb
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Newtonsoft.Json.xml
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.dll
+C:\Users\Aluno\Desktop\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.pdb
+C:\Users\Aluno\Documents\Visual Studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Documents\Visual Studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.dll
+C:\Users\Aluno\Documents\Visual Studio 2015\Projects\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.pdb
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\ApplicationInsights.config
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\csc.exe
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\vbc.exe
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\VBCSCompiler.exe
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.dll.config
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\SENAI.CadastroPerfil.UI.Site.pdb
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Antlr3.Runtime.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.SqlServer.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Web.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Newtonsoft.Json.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Helpers.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Mvc.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Optimization.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Razor.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Razor.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\WebGrease.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\EntityFramework.SqlServer.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.Web.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Helpers.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Mvc.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Optimization.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.Razor.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\System.Web.WebPages.Razor.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Antlr3.Runtime.pdb
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\bin\Newtonsoft.Json.xml
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.dll
+C:\Users\Aluno\Downloads\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\SENAI.CadastroPerfil.UI.Site\obj\Debug\SENAI.CadastroPerfil.UI.Site.pdb

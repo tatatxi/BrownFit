@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Apresentacao", "1 - Apresentacao", "{672B94A8-AFEA-44D0-A2B9-B8378D912E15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SENAI.BrownFit_Thanara.UI.Site", "SENAI.BrownFit_Thanara.UI.Site\SENAI.BrownFit_Thanara.UI.Site.csproj", "{50E194F5-85C4-4BCA-930C-3B3CACE7C3FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Dominio", "2 - Dominio", "{AE6C6C0B-00EA-47AF-8142-AFEB1E2F13AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Models", "3 - Models", "{587592E4-C497-4408-BCB6-F662081EC6F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{A78D7BE1-C159-4BA2-B65D-65A9FF8CB6EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Util", "5 - Util", "{B92F2899-B5BF-4C5E-9E55-532155B6DB6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SENAI.BrownFit_Thanara.Dominio", "SENAI.BrownFit_Thanara.Dominio\SENAI.BrownFit_Thanara.Dominio.csproj", "{E0EB2586-AEF1-490F-A31B-F1831918C867}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SENAI.BrownFit_Thanara.Models", "SENAI.BrownFit_Thanara.Models\SENAI.BrownFit_Thanara.Models.csproj", "{1262A65B-ACBE-4B59-BE03-D729E8107683}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SENAI.BrownFit_Thanara.Data", "SENAI.BrownFit_Thanara.Data\SENAI.BrownFit_Thanara.Data.csproj", "{A291ACEC-1506-4540-99CF-D12DE849FAB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SENAI.BrownFit_Thanara.Util", "SENAI.BrownFit_Thanara.Util\SENAI.BrownFit_Thanara.Util.csproj", "{38D5B22D-1783-4C59-81EA-8E6ADD596049}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50E194F5-85C4-4BCA-930C-3B3CACE7C3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E194F5-85C4-4BCA-930C-3B3CACE7C3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E194F5-85C4-4BCA-930C-3B3CACE7C3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E194F5-85C4-4BCA-930C-3B3CACE7C3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0EB2586-AEF1-490F-A31B-F1831918C867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0EB2586-AEF1-490F-A31B-F1831918C867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0EB2586-AEF1-490F-A31B-F1831918C867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0EB2586-AEF1-490F-A31B-F1831918C867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1262A65B-ACBE-4B59-BE03-D729E8107683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1262A65B-ACBE-4B59-BE03-D729E8107683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1262A65B-ACBE-4B59-BE03-D729E8107683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1262A65B-ACBE-4B59-BE03-D729E8107683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A291ACEC-1506-4540-99CF-D12DE849FAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A291ACEC-1506-4540-99CF-D12DE849FAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A291ACEC-1506-4540-99CF-D12DE849FAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A291ACEC-1506-4540-99CF-D12DE849FAB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38D5B22D-1783-4C59-81EA-8E6ADD596049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38D5B22D-1783-4C59-81EA-8E6ADD596049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38D5B22D-1783-4C59-81EA-8E6ADD596049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38D5B22D-1783-4C59-81EA-8E6ADD596049}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50E194F5-85C4-4BCA-930C-3B3CACE7C3FB} = {672B94A8-AFEA-44D0-A2B9-B8378D912E15}
+		{E0EB2586-AEF1-490F-A31B-F1831918C867} = {AE6C6C0B-00EA-47AF-8142-AFEB1E2F13AE}
+		{1262A65B-ACBE-4B59-BE03-D729E8107683} = {587592E4-C497-4408-BCB6-F662081EC6F7}
+		{A291ACEC-1506-4540-99CF-D12DE849FAB5} = {A78D7BE1-C159-4BA2-B65D-65A9FF8CB6EC}
+		{38D5B22D-1783-4C59-81EA-8E6ADD596049} = {B92F2899-B5BF-4C5E-9E55-532155B6DB6E}
+	EndGlobalSection
+EndGlobal
