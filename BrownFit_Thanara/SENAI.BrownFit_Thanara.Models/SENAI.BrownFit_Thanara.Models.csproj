@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Aluno.cs" />
+    <Compile Include="Models\PerfilPermissoes.cs" />
     <Compile Include="Models\Personal.cs" />
     <Compile Include="Models\Recepcionista.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
