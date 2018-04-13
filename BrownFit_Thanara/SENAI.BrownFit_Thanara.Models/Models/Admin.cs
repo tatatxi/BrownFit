@@ -32,6 +32,7 @@ namespace SENAI.BrownFit_Thanara.Models.Models
         //Adm pode cadastrar uma recepcionista
         public Guid RecepcionistaId { get; set; }
 
+        //Setando permissões
         public string Permissao { get; set; }
 
     }

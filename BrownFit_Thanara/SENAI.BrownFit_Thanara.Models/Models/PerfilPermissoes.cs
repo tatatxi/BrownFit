@@ -17,5 +17,15 @@ namespace SENAI.BrownFit_Thanara.Models.Models
 
         [Key]
         public Guid PerfilPermissoesId { get; set; }
+
+        public Guid RecepcionistaId { get; set; }
+
+        public Guid PersonalId { get; set; }
+
+        public virtual Recepcionista Recepcionista { get; set; }
+
+        public virtual Personal Personal { get; set; }
+
+
     }
 }
