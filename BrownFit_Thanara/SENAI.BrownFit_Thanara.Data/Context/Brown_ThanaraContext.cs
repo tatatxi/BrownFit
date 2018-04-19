@@ -1,6 +1,7 @@
 ﻿using SENAI.BrownFit_Thanara.Models.Models;
 using System;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 
 namespace SENAI.BrownFit_Thanara.Data.Context
@@ -8,7 +9,7 @@ namespace SENAI.BrownFit_Thanara.Data.Context
     public class Brown_ThanaraContext : DbContext
     {
         public Brown_ThanaraContext()
-            : base("DefaultConnection")
+            : base("BFConnectionStrings")
         {
 
         }
@@ -44,6 +45,9 @@ namespace SENAI.BrownFit_Thanara.Data.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //Remover a convenção do plural
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
             //Toda string no meu sistema vai ser varchar no banco de dados.
             modelBuilder.Properties<string>()
                .Configure(p => p.HasColumnType("varchar"));

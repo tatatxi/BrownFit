@@ -47,7 +47,7 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form id="login-form" action="http://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                                    <form id="login-form" action="Login" method="post" role="form" style="display: block;">
                                         <div class="form-group">
                                             <input type="text" name="Usuario" id="Usuario" tabindex="1" class="form-control" placeholder="Matrícula" value="">
                                         </div>
@@ -61,6 +61,7 @@
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-sm-6 col-sm-offset-3">
+                                                    <asp:Button ID="btnEntrar" runat="server" Text="Login" CssClass="form-control btn btn-primary" OnClick="btnEntrar_Click" />
                                                     <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-primary" value="Log In">
                                                 </div>
                                             </div>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,15 +10,15 @@ namespace SENAI.BrownFit_Thanara.Models.Models
     {
         public Recepcionista()
         {
-            RecepcionistaId = Guid.NewGuid();
+            RecepcionistaID = Guid.NewGuid();
             Permissao = "RECEPCIONISTA";
         }
 
         [Key]
-        public Guid RecepcionistaId { get; set; }
+        public Guid RecepcionistaID { get; set; }
 
         [StringLength(50, MinimumLength = 5)]
-        [Column(TypeName = "int")]
+        [Column(TypeName = "varchar")]
         [Required]
         public string Matricula { get; set; }
 
@@ -26,12 +27,21 @@ namespace SENAI.BrownFit_Thanara.Models.Models
         [Required]
         public string Senha { get; set; }
 
+        [StringLength(50, MinimumLength = 2)]
+        [Required(ErrorMessage = "O Nome é obrigatório.")]
+        [Column(TypeName = "varchar")]
+        [DisplayName("Nome: ")]
+        public string Nome { get; set; }
+
+
         [Required]
         [DataType(DataType.Date)]
         public DateTime DataCadastro { get; set; }
 
+        public Guid AlunoId { get; set; }
+
         //E uma recepcionista cadastra vários alunos
-        public virtual Aluno Alunos { get; set; }
+        public virtual Aluno Aluno { get; set; }
 
         public string Permissao { get; set; }
     }

@@ -10,13 +10,13 @@ namespace SENAI.BrownFit_Thanara.Models.Models
     {
         public Aluno()
         {
-            AlunoId = Guid.NewGuid();
+            AlunoID = Guid.NewGuid();
             Permissao = "Aluno";
         }
 
         [Key]
         [Column("Id")]
-        public Guid AlunoId { get; set; }
+        public Guid AlunoID { get; set; }
 
         [StringLength(50, MinimumLength = 2)]
         [Required(ErrorMessage = "O Nome do Aluno é obrigatório.")]
@@ -32,6 +32,7 @@ namespace SENAI.BrownFit_Thanara.Models.Models
 
         [StringLength(11, MinimumLength = 11)]
         [Required(ErrorMessage = "O CPF é obrigatório.")]
+        [Column(TypeName = "int")]
         public string CPF { get; set; }
 
         [StringLength(50, MinimumLength = 5)]
@@ -63,28 +64,37 @@ namespace SENAI.BrownFit_Thanara.Models.Models
 
         [StringLength(11, MinimumLength = 11)]
         [Required(ErrorMessage = "Peso é obrigatório.")]
+        [Column(TypeName = "varchar")]
         public string Peso { get; set; }
 
         [StringLength(11, MinimumLength = 11)]
         [Required(ErrorMessage = "Altura é obrigatório.")]
+        [Column(TypeName = "varchar")]
         public string Altura { get; set; }
 
         [StringLength(11, MinimumLength = 11)]
         [Required(ErrorMessage = "Massa corporal é obrigatório.")]
         [DisplayName("Massa Corporal: ")]
+        [Column(TypeName = "varchar")]
         public string MassaMagra { get; set; }
 
         [DisplayName("Tipo de Treino: ")]
+        [Column(TypeName = "varchar")]
         public string TipoTreino { get; set; }
 
         [DisplayName("Tempo de Treino: ")]
+        [Column(TypeName = "varchar")]
         public string TempoTreino { get; set; }
 
         [DisplayName("Sugestão para aluno: ")]
+        [Column(TypeName = "varchar")]
         public string Sugestao { get; set; }
 
         //Um aluno pode ter um professor
-        public Guid PersonalId { get; set; }
+        public Guid PersonalID { get; set; }
+
+        [ForeignKey("PersonalID")]
+        public virtual Personal personal { get; set; }
 
     }
 }

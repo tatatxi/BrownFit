@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,20 +13,26 @@ namespace SENAI.BrownFit_Thanara.Models.Models
     {
         public PerfilPermissoes()
         {
-            PerfilPermissoesId = Guid.NewGuid();
+            PerfilPermissoesID = Guid.NewGuid();
         }
 
         [Key]
-        public Guid PerfilPermissoesId { get; set; }
+        public Guid PerfilPermissoesID { get; set; }
 
-        public Guid RecepcionistaId { get; set; }
+        public Guid RecepcionistaID { get; set; }
 
-        public Guid PersonalId { get; set; }
+        public Guid PersonalID { get; set; }
 
+        public Guid AdminID { get; set; }
+
+        [ForeignKey("RecepcionistaID")]
         public virtual Recepcionista Recepcionista { get; set; }
 
+        [ForeignKey("PersonalID")]
         public virtual Personal Personal { get; set; }
 
+        [ForeignKey("AdminID")]
+        public virtual Admin Admin { get; set; }
 
     }
 }
