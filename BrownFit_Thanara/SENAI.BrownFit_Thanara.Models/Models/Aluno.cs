@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SENAI.BrownFit_Thanara.Models.Models
+namespace SENAI.BrownFit_Thanara.Models
 {
     [Table("Alunos")]
     public class Aluno
@@ -11,7 +11,6 @@ namespace SENAI.BrownFit_Thanara.Models.Models
         public Aluno()
         {
             AlunoID = Guid.NewGuid();
-            Permissao = "Aluno";
         }
 
         [Key]
@@ -32,7 +31,7 @@ namespace SENAI.BrownFit_Thanara.Models.Models
 
         [StringLength(11, MinimumLength = 11)]
         [Required(ErrorMessage = "O CPF é obrigatório.")]
-        [Column(TypeName = "int")]
+        [Column(TypeName = "varchar")]
         public string CPF { get; set; }
 
         [StringLength(50, MinimumLength = 5)]
@@ -89,12 +88,6 @@ namespace SENAI.BrownFit_Thanara.Models.Models
         [DisplayName("Sugestão para aluno: ")]
         [Column(TypeName = "varchar")]
         public string Sugestao { get; set; }
-
-        //Um aluno pode ter um professor
-        public Guid PersonalID { get; set; }
-
-        [ForeignKey("PersonalID")]
-        public virtual Personal personal { get; set; }
 
     }
 }

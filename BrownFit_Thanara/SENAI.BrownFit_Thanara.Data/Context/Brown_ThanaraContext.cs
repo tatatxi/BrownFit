@@ -1,4 +1,4 @@
-﻿using SENAI.BrownFit_Thanara.Models.Models;
+﻿using SENAI.BrownFit_Thanara.Models;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -14,13 +14,13 @@ namespace SENAI.BrownFit_Thanara.Data.Context
 
         }
 
-        public DbSet<Admin> Admins { get; set; }
-
         public DbSet<Aluno> Alunos { get; set; }
 
-        public DbSet<Recepcionista> Recepcionistas { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
-        public DbSet<Personal> Personais { get; set; }
+        public DbSet<Perfil> Perfis { get; set; }
+
+        public DbSet<UsuarioPerfil> UsuariosPerfis { get; set; }
 
         public override int SaveChanges()
         {
@@ -55,6 +55,9 @@ namespace SENAI.BrownFit_Thanara.Data.Context
             //quando uma string não tiver maxlength, ela terá um maxlength no banco de 100.
             modelBuilder.Properties<string>()
                 .Configure(p => p.HasMaxLength(100));
+
+            //inicializar sem o banco
+            Database.SetInitializer<Brown_ThanaraContext>(null);
 
             base.OnModelCreating(modelBuilder);
         }

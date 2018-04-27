@@ -53,10 +53,10 @@
     <Compile Include="Context\Brown_ThanaraContext.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositorios\AdminRepositorio.cs" />
     <Compile Include="Repositorios\AlunoRepositorio.cs" />
-    <Compile Include="Repositorios\PersonalRepositorio.cs" />
-    <Compile Include="Repositorios\RecepcionistaRepositorio.cs" />
+    <Compile Include="Repositorios\PerfilRepository.cs" />
+    <Compile Include="Repositorios\UsuarioPerfilsRepository.cs" />
+    <Compile Include="Repositorios\UsuarioRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

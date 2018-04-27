@@ -1,0 +1,125 @@
+﻿@model IEnumerable<SENAI.BrownFit_Thanara.Models.Aluno>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sobrenome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataCadastro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ativo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Excluido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Permissao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Peso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Altura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MassaMagra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoTreino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TempoTreino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sugestao)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sobrenome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCadastro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ativo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Excluido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Permissao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Peso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Altura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MassaMagra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoTreino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TempoTreino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sugestao)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.AlunoID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.AlunoID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.AlunoID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

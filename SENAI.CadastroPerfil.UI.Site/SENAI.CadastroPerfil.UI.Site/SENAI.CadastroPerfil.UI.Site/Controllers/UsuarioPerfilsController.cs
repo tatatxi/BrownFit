@@ -22,7 +22,7 @@ namespace SENAI.CadastroPerfil.UI.Site.Controllers
 
         public ActionResult Index()
         {
-            
+
             return View(usuarioPerfilsRepository.GetAll());
         }
 

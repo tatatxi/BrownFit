@@ -1,11 +1,9 @@
 ﻿using SENAI.BrownFit_Thanara.Data.Context;
-using SENAI.BrownFit_Thanara.Models.Models;
+using SENAI.BrownFit_Thanara.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SENAI.BrownFit_Thanara.Data.Repositorios
 {

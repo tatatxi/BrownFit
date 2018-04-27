@@ -93,7 +93,6 @@ C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\Newtonsoft.Json.dll
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\SENAI.BrownFit_Thanara.Data.dll
-C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\SENAI.BrownFit_Thanara.Dominio.dll
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\SENAI.BrownFit_Thanara.Models.dll
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\SENAI.BrownFit_Thanara.Util.dll
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\System.Web.Helpers.dll
@@ -105,7 +104,6 @@ C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\System.Web.WebPages.Razor.dll
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\WebGrease.dll
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\SENAI.BrownFit_Thanara.Data.pdb
-C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\SENAI.BrownFit_Thanara.Dominio.pdb
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\SENAI.BrownFit_Thanara.Models.pdb
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\SENAI.BrownFit_Thanara.Util.pdb
 C:\Users\Aluno\Documents\GitHub\BrownFit\BrownFit_Thanara\SENAI.BrownFit_Thanara.UI.Site\bin\EntityFramework.xml

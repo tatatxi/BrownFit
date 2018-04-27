@@ -156,8 +156,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AlunosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PerfilsController.cs" />
+    <Compile Include="Controllers\UsuarioPerfilsController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -204,10 +208,28 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Controllers\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Views\Home\View.cshtml" />
+    <Content Include="Views\Perfils\Create.cshtml" />
+    <Content Include="Views\Perfils\Delete.cshtml" />
+    <Content Include="Views\Perfils\Details.cshtml" />
+    <Content Include="Views\Perfils\Edit.cshtml" />
+    <Content Include="Views\Perfils\Index.cshtml" />
+    <Content Include="Views\Alunos\Create.cshtml" />
+    <Content Include="Views\Alunos\Delete.cshtml" />
+    <Content Include="Views\Alunos\Details.cshtml" />
+    <Content Include="Views\Alunos\Edit.cshtml" />
+    <Content Include="Views\Alunos\Index.cshtml" />
+    <Content Include="Views\UsuarioPerfils\Create.cshtml" />
+    <Content Include="Views\UsuarioPerfils\Delete.cshtml" />
+    <Content Include="Views\UsuarioPerfils\Details.cshtml" />
+    <Content Include="Views\UsuarioPerfils\Edit.cshtml" />
+    <Content Include="Views\UsuarioPerfils\Index.cshtml" />
+    <Content Include="Views\Usuarios\Create.cshtml" />
+    <Content Include="Views\Usuarios\Delete.cshtml" />
+    <Content Include="Views\Usuarios\Details.cshtml" />
+    <Content Include="Views\Usuarios\Edit.cshtml" />
+    <Content Include="Views\Usuarios\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -218,17 +240,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SENAI.BrownFit_Thanara.Data\SENAI.BrownFit_Thanara.Data.csproj">
       <Project>{a291acec-1506-4540-99cf-d12de849fab5}</Project>
       <Name>SENAI.BrownFit_Thanara.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SENAI.BrownFit_Thanara.Dominio\SENAI.BrownFit_Thanara.Dominio.csproj">
-      <Project>{e0eb2586-aef1-490f-a31b-f1831918c867}</Project>
-      <Name>SENAI.BrownFit_Thanara.Dominio</Name>
     </ProjectReference>
     <ProjectReference Include="..\SENAI.BrownFit_Thanara.Models\SENAI.BrownFit_Thanara.Models.csproj">
       <Project>{1262a65b-acbe-4b59-be03-d729e8107683}</Project>

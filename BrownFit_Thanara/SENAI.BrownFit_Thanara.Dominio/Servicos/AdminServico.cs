@@ -11,7 +11,7 @@ namespace SENAI.BrownFit_Thanara.Dominio.Servicos
 {
     public class AdminServico
     {
-        public Admin EfetuarLogin(string matricula, string senha)
+        public Usr EfetuarLogin(string matricula, string senha)
         {
             AdminRepositorio adminRepositorio = new AdminRepositorio();
             Admin admin = adminRepositorio.EfetuarLogin(matricula, Criptografia.GetMD5Hash(senha));
