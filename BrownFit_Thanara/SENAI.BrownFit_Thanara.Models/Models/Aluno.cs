@@ -20,13 +20,13 @@ namespace SENAI.BrownFit_Thanara.Models
         [StringLength(50, MinimumLength = 2)]
         [Required(ErrorMessage = "O Nome do Aluno é obrigatório.")]
         [Column(TypeName = "varchar")]
-        [DisplayName("Nome do Aluno: ")]
+        [DisplayName("Nome: ")]
         public string Nome { get; set; }
 
         [StringLength(50, MinimumLength = 2)]
         [Required(ErrorMessage = "O Sobrenome do Aluno é obrigatório.")]
         [Column(TypeName = "varchar")]
-        [DisplayName("Sobrenome do Aluno: ")]
+        [DisplayName("Sobrenome: ")]
         public string Sobrenome { get; set; }
 
         [StringLength(11, MinimumLength = 11)]
@@ -57,21 +57,17 @@ namespace SENAI.BrownFit_Thanara.Models
         [Required]
         public bool Excluido { get; set; }
 
-        [Required]
         [StringLength(15, MinimumLength = 2)]
         public string Permissao { get; set; }
 
-        [StringLength(11, MinimumLength = 11)]
         [Required(ErrorMessage = "Peso é obrigatório.")]
         [Column(TypeName = "varchar")]
         public string Peso { get; set; }
 
-        [StringLength(11, MinimumLength = 11)]
         [Required(ErrorMessage = "Altura é obrigatório.")]
         [Column(TypeName = "varchar")]
         public string Altura { get; set; }
 
-        [StringLength(11, MinimumLength = 11)]
         [Required(ErrorMessage = "Massa corporal é obrigatório.")]
         [DisplayName("Massa Corporal: ")]
         [Column(TypeName = "varchar")]
