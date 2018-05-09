@@ -12,7 +12,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
     public class LoginController : Controller
     {
-        //GET: Login
         public ActionResult Index()
         {
             return View();
@@ -24,9 +23,8 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(UsuarioViewModel usuario)
+        public ActionResult Entrar(UsuarioViewModel usuario)
         {
-
             if (ModelState.IsValid)
             {
                 UsuarioRepository usuarioRepository = new UsuarioRepository();
