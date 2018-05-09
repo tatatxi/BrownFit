@@ -17,13 +17,13 @@ namespace SENAI.BrownFit_Thanara.Models
         [Column("Id")]
         public Guid AlunoID { get; set; }
 
-        [StringLength(50, MinimumLength = 2)]
+        [StringLength(100, MinimumLength = 2)]
         [Required(ErrorMessage = "O Nome do Aluno é obrigatório.")]
         [Column(TypeName = "varchar")]
         [DisplayName("Nome: ")]
         public string Nome { get; set; }
 
-        [StringLength(50, MinimumLength = 2)]
+        [StringLength(100, MinimumLength = 2)]
         [Required(ErrorMessage = "O Sobrenome do Aluno é obrigatório.")]
         [Column(TypeName = "varchar")]
         [DisplayName("Sobrenome: ")]
@@ -34,7 +34,7 @@ namespace SENAI.BrownFit_Thanara.Models
         [Column(TypeName = "varchar")]
         public string CPF { get; set; }
 
-        [StringLength(50, MinimumLength = 5)]
+        [StringLength(100, MinimumLength = 5)]
         [Required(ErrorMessage = "O E-mail é obrigatório.")]
         [DisplayName("E-mail do Aluno: ")]
         [DataType(DataType.EmailAddress)]
@@ -45,7 +45,7 @@ namespace SENAI.BrownFit_Thanara.Models
         [DisplayName("Data de Nascimento: ")]
         public DateTime DataNascimento { get; set; }
 
-        [Required]
+
         [DataType(DataType.Date)]
         [DisplayName("Data de Cadastro: ")]
         public DateTime DataCadastro { get; set; }
@@ -61,11 +61,13 @@ namespace SENAI.BrownFit_Thanara.Models
         public string Permissao { get; set; }
 
         [Required(ErrorMessage = "Peso é obrigatório.")]
+        [DisplayName("Peso: ")]
         [Column(TypeName = "varchar")]
         public string Peso { get; set; }
 
         [Required(ErrorMessage = "Altura é obrigatório.")]
         [Column(TypeName = "varchar")]
+        [DisplayName("Altura: ")]
         public string Altura { get; set; }
 
         [Required(ErrorMessage = "Massa corporal é obrigatório.")]

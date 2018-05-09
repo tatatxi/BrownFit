@@ -22,7 +22,7 @@ namespace SENAI.BrownFit_Thanara.Models
 
 
         [Required(ErrorMessage = "O Nome do Perfil é obrigatório.")]
-        [MaxLength(20, ErrorMessage = "O Nome do Perfil deve conter no máximo 20 caracteres.")]
+        [MaxLength(50, ErrorMessage = "O Nome do Perfil deve conter no máximo 50 caracteres.")]
         [MinLength(2, ErrorMessage = "O Nome do Perfil deve conter no mínimo 2 caracteres.")]
         [Column(TypeName = "varchar")]
         [DisplayName("Nome do Perfil: ")]
