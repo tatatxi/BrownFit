@@ -8,12 +8,15 @@ using System.Web;
 using System.Web.Mvc;
 using SENAI.BrownFit_Thanara.Data.Context;
 using SENAI.BrownFit_Thanara.Models;
+using SENAI.BrownFit_Thanara.Data.Repositorios;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
+    [Authorize(Roles = "Admin, Personal, Recepcionista")]
     public class UsuarioPerfilsController : Controller
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
+        UsuarioPerfilsRepository usuarioPerfilsRepository = new UsuarioPerfilsRepository();
 
         // GET: UsuarioPerfils
         public ActionResult Index()

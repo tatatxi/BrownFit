@@ -1,0 +1,4 @@
+1) Selecionar SENAI.BrownFit_Thanara.Data no Package Manager Console
+2) Executar Enable-Migrations -ContextTypeName Brown_ThanaraContext
+3) Executar Add-Migration InitialCreate
+4) Executar Update-Database sempre que houver alterações em alguma Model

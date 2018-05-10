@@ -5,12 +5,14 @@ using System.Net;
 using System.Web.Mvc;
 using SENAI.BrownFit_Thanara.Data.Context;
 using SENAI.BrownFit_Thanara.Models;
+using SENAI.BrownFit_Thanara.Data.Repositorios;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
     public class PerfilsController : Controller
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
+        PerfilRepository perfilRepository = new PerfilRepository();
 
         // GET: Perfils
         public ActionResult Index()

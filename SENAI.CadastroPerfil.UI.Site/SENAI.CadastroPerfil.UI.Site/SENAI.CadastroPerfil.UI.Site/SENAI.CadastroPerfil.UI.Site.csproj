@@ -232,6 +232,7 @@
     <Content Include="Views\UsuarioPerfils\Edit.cshtml" />
     <Content Include="Views\UsuarioPerfils\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\MenuPrinpical.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
