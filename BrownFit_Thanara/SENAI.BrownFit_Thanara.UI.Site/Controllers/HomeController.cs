@@ -14,6 +14,11 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View();
         }
 
+        public ActionResult MenuPrincipal()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

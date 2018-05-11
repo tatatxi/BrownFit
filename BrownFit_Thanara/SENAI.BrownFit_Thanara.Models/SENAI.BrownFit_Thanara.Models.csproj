@@ -49,8 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Agenda.cs" />
     <Compile Include="Models\Aluno.cs" />
     <Compile Include="Models\Perfil.cs" />
+    <Compile Include="Models\Relatorio.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\UsuarioPerfil.cs" />
     <Compile Include="Models\UsuarioViewModel.cs" />
