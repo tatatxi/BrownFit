@@ -8,17 +8,16 @@ using SENAI.BrownFit_Thanara.Models;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
+    [Authorize(Roles = "Admin, Personal, Recepcionista")]
     public class AlunosController : Controller
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
 
-        // GET: Alunos
         public ActionResult Index()
         {
             return View(db.Alunos.ToList());
         }
 
-        // GET: Alunos/Details/5
         public ActionResult Details(Guid? id)
         {
             if (id == null)
@@ -33,15 +32,11 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(aluno);
         }
 
-        // GET: Alunos/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Alunos/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "AlunoID,Nome,Sobrenome,CPF,Email,DataNascimento,DataCadastro,Ativo,Excluido,Permissao,Peso,Altura,MassaMagra,TipoTreino,TempoTreino,Sugestao")] Aluno aluno)
@@ -57,7 +52,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(aluno);
         }
 
-        // GET: Alunos/Edit/5
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
@@ -72,9 +66,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(aluno);
         }
 
-        // POST: Alunos/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "AlunoID,Nome,Sobrenome,CPF,Email,DataNascimento,DataCadastro,Ativo,Excluido,Permissao,Peso,Altura,MassaMagra,TipoTreino,TempoTreino,Sugestao")] Aluno aluno)
@@ -88,7 +79,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(aluno);
         }
 
-        // GET: Alunos/Delete/5
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
@@ -103,7 +93,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(aluno);
         }
 
-        // POST: Alunos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)

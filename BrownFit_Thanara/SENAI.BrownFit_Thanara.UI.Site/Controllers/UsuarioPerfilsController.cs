@@ -1,31 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using SENAI.BrownFit_Thanara.Data.Context;
+using SENAI.BrownFit_Thanara.Data.Repositorios;
+using SENAI.BrownFit_Thanara.Models;
+using System;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using SENAI.BrownFit_Thanara.Data.Context;
-using SENAI.BrownFit_Thanara.Models;
-using SENAI.BrownFit_Thanara.Data.Repositorios;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
-    [Authorize(Roles = "Admin, Personal, Recepcionista")]
     public class UsuarioPerfilsController : Controller
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
         UsuarioPerfilsRepository usuarioPerfilsRepository = new UsuarioPerfilsRepository();
 
-        // GET: UsuarioPerfils
         public ActionResult Index()
         {
             var usuariosPerfis = db.UsuariosPerfis.Include(u => u.Perfil).Include(u => u.Usuario);
             return View(usuariosPerfis.ToList());
         }
 
-        // GET: UsuarioPerfils/Details/5
         public ActionResult Details(Guid? id)
         {
             if (id == null)
@@ -40,7 +34,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(usuarioPerfil);
         }
 
-        // GET: UsuarioPerfils/Create
         public ActionResult Create()
         {
             ViewBag.PerfilId = new SelectList(db.Perfis, "PerfilId", "Nome");
@@ -48,9 +41,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View();
         }
 
-        // POST: UsuarioPerfils/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "UsuarioPerfilId,UsuarioId,PerfilId")] UsuarioPerfil usuarioPerfil)
@@ -68,7 +58,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(usuarioPerfil);
         }
 
-        // GET: UsuarioPerfils/Edit/5
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
@@ -85,9 +74,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(usuarioPerfil);
         }
 
-        // POST: UsuarioPerfils/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "UsuarioPerfilId,UsuarioId,PerfilId")] UsuarioPerfil usuarioPerfil)
@@ -103,7 +89,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(usuarioPerfil);
         }
 
-        // GET: UsuarioPerfils/Delete/5
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
@@ -118,7 +103,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(usuarioPerfil);
         }
 
-        // POST: UsuarioPerfils/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
