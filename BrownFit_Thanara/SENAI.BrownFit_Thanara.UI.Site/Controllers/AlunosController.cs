@@ -8,7 +8,8 @@ using SENAI.BrownFit_Thanara.Models;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
-    [Authorize(Roles = "Admin, Personal, Recepcionista")]
+    //[Authorize(Roles = "Admin, Personal, Recepcionista")]
+    //[Authorize(Roles = "Personal")]
     public class AlunosController : Controller
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();

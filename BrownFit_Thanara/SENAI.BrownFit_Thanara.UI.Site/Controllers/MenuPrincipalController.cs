@@ -87,7 +87,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View();
         }
 
-        
+
 
         // POST: MenuPrincipal/Delete/5
         [HttpPost]
