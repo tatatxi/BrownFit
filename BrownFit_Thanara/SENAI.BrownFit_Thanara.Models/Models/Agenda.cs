@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SENAI.BrownFit_Thanara.Models.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -34,6 +35,8 @@ namespace SENAI.BrownFit_Thanara.Models
 
         public virtual List<Aluno> Alunos { get; set; }
 
+        //Lista de Aulas que podem ter no dia
+        public virtual List<Aula> Aulas { get; set; }
 
         //propriedade que apenas o perfil de personal poderá agendar aulas
         //e quais campos estão na aula

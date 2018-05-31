@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Models\Agenda.cs" />
     <Compile Include="Models\Aluno.cs" />
+    <Compile Include="Models\Aulas.cs" />
     <Compile Include="Models\Perfil.cs" />
     <Compile Include="Models\Relatorio.cs" />
     <Compile Include="Models\Usuario.cs" />
