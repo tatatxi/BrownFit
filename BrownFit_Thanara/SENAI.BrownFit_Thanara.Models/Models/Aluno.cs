@@ -50,11 +50,10 @@ namespace SENAI.BrownFit_Thanara.Models
         [DisplayName("Data de Cadastro: ")]
         public DateTime DataCadastro { get; set; }
 
-        [Required]
+
         [DisplayName("Situação: ")]
         public bool Ativo { get; set; }
 
-        [Required]
         public bool Excluido { get; set; }
 
         [StringLength(15, MinimumLength = 2)]

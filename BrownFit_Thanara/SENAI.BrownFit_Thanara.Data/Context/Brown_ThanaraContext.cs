@@ -61,5 +61,9 @@ namespace SENAI.BrownFit_Thanara.Data.Context
 
             base.OnModelCreating(modelBuilder);
         }
+
+        public System.Data.Entity.DbSet<SENAI.BrownFit_Thanara.Models.Relatorio> Relatorios { get; set; }
+
+        public System.Data.Entity.DbSet<SENAI.BrownFit_Thanara.Models.Agenda> Agenda { get; set; }
     }
 }

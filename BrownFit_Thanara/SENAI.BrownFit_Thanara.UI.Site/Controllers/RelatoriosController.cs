@@ -11,108 +11,108 @@ using SENAI.BrownFit_Thanara.Models;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
-    public class AgendaController : Controller
+    public class RelatoriosController : Controller
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
 
-        // GET: Agenda
+        // GET: Relatorios
         public ActionResult Index()
         {
-            return View(db.Agenda.ToList());
+            return View(db.Relatorios.ToList());
         }
 
-        // GET: Agenda/Details/5
+        // GET: Relatorios/Details/5
         public ActionResult Details(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Agenda agenda = db.Agenda.Find(id);
-            if (agenda == null)
+            Relatorio relatorio = db.Relatorios.Find(id);
+            if (relatorio == null)
             {
                 return HttpNotFound();
             }
-            return View(agenda);
+            return View(relatorio);
         }
 
-        // GET: Agenda/Create
+        // GET: Relatorios/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Agenda/Create
+        // POST: Relatorios/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AgendaID,DataAula,Descricao")] Agenda agenda)
+        public ActionResult Create([Bind(Include = "RelatorioID")] Relatorio relatorio)
         {
             if (ModelState.IsValid)
             {
-                agenda.AgendaID = Guid.NewGuid();
-                db.Agenda.Add(agenda);
+                relatorio.RelatorioID = Guid.NewGuid();
+                db.Relatorios.Add(relatorio);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(agenda);
+            return View(relatorio);
         }
 
-        // GET: Agenda/Edit/5
+        // GET: Relatorios/Edit/5
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Agenda agenda = db.Agenda.Find(id);
-            if (agenda == null)
+            Relatorio relatorio = db.Relatorios.Find(id);
+            if (relatorio == null)
             {
                 return HttpNotFound();
             }
-            return View(agenda);
+            return View(relatorio);
         }
 
-        // POST: Agenda/Edit/5
+        // POST: Relatorios/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AgendaID,DataAula,Descricao")] Agenda agenda)
+        public ActionResult Edit([Bind(Include = "RelatorioID")] Relatorio relatorio)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(agenda).State = EntityState.Modified;
+                db.Entry(relatorio).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(agenda);
+            return View(relatorio);
         }
 
-        // GET: Agenda/Delete/5
+        // GET: Relatorios/Delete/5
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Agenda agenda = db.Agenda.Find(id);
-            if (agenda == null)
+            Relatorio relatorio = db.Relatorios.Find(id);
+            if (relatorio == null)
             {
                 return HttpNotFound();
             }
-            return View(agenda);
+            return View(relatorio);
         }
 
-        // POST: Agenda/Delete/5
+        // POST: Relatorios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
         {
-            Agenda agenda = db.Agenda.Find(id);
-            db.Agenda.Remove(agenda);
+            Relatorio relatorio = db.Relatorios.Find(id);
+            db.Relatorios.Remove(relatorio);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

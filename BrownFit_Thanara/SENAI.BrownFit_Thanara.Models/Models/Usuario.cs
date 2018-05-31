@@ -18,6 +18,7 @@ namespace SENAI.BrownFit_Thanara.Models
         }
 
         [Key]
+        [Column("Id")]
         public Guid UsuarioId { get; set; }
 
         [Required(ErrorMessage = "O Nome do usuário é obrigatório.")]

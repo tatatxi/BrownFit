@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SENAI.BrownFit_Thanara.Models.UsuarioPerfil>
+﻿@model IEnumerable<SENAI.BrownFit_Thanara.Models.Agenda>
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -18,10 +18,10 @@
     <table class="table">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Perfil.Nome)
+                @Html.DisplayNameFor(model => model.DataAula)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Usuario.Nome)
+                @Html.DisplayNameFor(model => model.Descricao)
             </th>
             <th></th>
         </tr>
@@ -29,15 +29,15 @@
     @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Perfil.Nome)
+                @Html.DisplayFor(modelItem => item.DataAula)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Usuario.Nome)
+                @Html.DisplayFor(modelItem => item.Descricao)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.UsuarioPerfilId }) |
-                @Html.ActionLink("Details", "Details", new { id=item.UsuarioPerfilId }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.UsuarioPerfilId })
+                @Html.ActionLink("Edit", "Edit", new { id=item.AgendaID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.AgendaID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.AgendaID })
             </td>
         </tr>
     }

@@ -30,16 +30,13 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-12 img-circle">
-                            <a href="@Url.Action("Index", "Alunos")">
+                            <a href="@Url.Action("Index", "Agenda")">
                                 <img src="~/Images/agenda.png" height="400" width="350" style="border: 1px solid black" />
                             </a>
-                            @using (Html.BeginForm("RedirecionarAcaoAluno", "MenuPrincipal", FormMethod.Post))
-                            {
-                                <a href="~/Views/Alunos/Details.cshtml">
-                                    <img src="~/Images/alunos.png" height="450" width="400" style="border: 1px solid black" />
-                                </a>
-                            }
-                            <a href="~/Views/Alunos/Details.cshtml">
+                            <a href="@Url.Action("Index", "Alunos")">
+                                <img src="~/Images/alunos.png" height="450" width="400" style="border: 1px solid black" />
+                            </a>
+                            <a href="@Url.Action("Index", "Relatorios")">
                                 <img src="~/Images/grafico.png" height="400" width="350" style="border: 1px solid black" />
                             </a>
 

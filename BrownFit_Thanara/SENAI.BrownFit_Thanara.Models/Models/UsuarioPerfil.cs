@@ -17,6 +17,7 @@ namespace SENAI.BrownFit_Thanara.Models
         }
 
         [Key]
+        [Column("Id")]
         public Guid UsuarioPerfilId { get; set; }
 
         public Guid UsuarioId { get; set; }

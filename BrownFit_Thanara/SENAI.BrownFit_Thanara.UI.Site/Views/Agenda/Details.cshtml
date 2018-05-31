@@ -1,4 +1,4 @@
-﻿@model SENAI.BrownFit_Thanara.Models.UsuarioPerfil
+﻿@model SENAI.BrownFit_Thanara.Models.Agenda
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -13,29 +13,29 @@
 </head>
 <body>
     <div>
-        <h4>UsuarioPerfil</h4>
+        <h4>Agenda</h4>
         <hr />
         <dl class="dl-horizontal">
             <dt>
-                @Html.DisplayNameFor(model => model.Perfil.Nome)
+                @Html.DisplayNameFor(model => model.DataAula)
             </dt>
     
             <dd>
-                @Html.DisplayFor(model => model.Perfil.Nome)
+                @Html.DisplayFor(model => model.DataAula)
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.Usuario.Nome)
+                @Html.DisplayNameFor(model => model.Descricao)
             </dt>
     
             <dd>
-                @Html.DisplayFor(model => model.Usuario.Nome)
+                @Html.DisplayFor(model => model.Descricao)
             </dd>
     
         </dl>
     </div>
     <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.UsuarioPerfilId }) |
+        @Html.ActionLink("Edit", "Edit", new { id = Model.AgendaID }) |
         @Html.ActionLink("Back to List", "Index")
     </p>
 </body>

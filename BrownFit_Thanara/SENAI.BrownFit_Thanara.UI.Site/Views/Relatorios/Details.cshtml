@@ -1,4 +1,4 @@
-﻿@model SENAI.BrownFit_Thanara.Models.Perfil
+﻿@model SENAI.BrownFit_Thanara.Models.Relatorio
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -13,21 +13,13 @@
 </head>
 <body>
     <div>
-        <h4>Perfil</h4>
+        <h4>Relatorio</h4>
         <hr />
         <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.Nome)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Nome)
-            </dd>
-    
         </dl>
     </div>
     <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.PerfilId }) |
+        @Html.ActionLink("Edit", "Edit", new { id = Model.RelatorioID }) |
         @Html.ActionLink("Back to List", "Index")
     </p>
 </body>
