@@ -1,4 +1,5 @@
 ﻿using SENAI.BrownFit_Thanara.Models;
+using SENAI.BrownFit_Thanara.Models.Models;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -21,6 +22,10 @@ namespace SENAI.BrownFit_Thanara.Data.Context
         public DbSet<Perfil> Perfis { get; set; }
 
         public DbSet<UsuarioPerfil> UsuariosPerfis { get; set; }
+
+        public DbSet<Agenda> Agendas { get; set; }
+
+        public DbSet<Aula> Aulas { get; set; }
 
         public override int SaveChanges()
         {
@@ -61,9 +66,5 @@ namespace SENAI.BrownFit_Thanara.Data.Context
 
             base.OnModelCreating(modelBuilder);
         }
-
-        public System.Data.Entity.DbSet<SENAI.BrownFit_Thanara.Models.Relatorio> Relatorios { get; set; }
-
-        public System.Data.Entity.DbSet<SENAI.BrownFit_Thanara.Models.Agenda> Agenda { get; set; }
     }
 }

@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using SENAI.BrownFit_Thanara.Data.Context;
 using SENAI.BrownFit_Thanara.Models;
+using System.Data.Entity.Core.Objects;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
@@ -18,7 +19,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         // GET: Agenda
         public ActionResult Index()
         {
-            return View(db.Agenda.ToList());
+            return View(db.Agendas.ToList());
         }
 
         // GET: Agenda/Details/5
@@ -28,7 +29,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Agenda agenda = db.Agenda.Find(id);
+            Agenda agenda = db.Agendas.Find(id);
             if (agenda == null)
             {
                 return HttpNotFound();
@@ -39,6 +40,8 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         // GET: Agenda/Create
         public ActionResult Create()
         {
+            ViewBag.Aulas = db.Aulas.ToList();
+            ViewBag.Professores = db.Usuarios.Where(p => p.UsuariosPerfis.Any(up => up.Perfil.Nome == "Personal")).ToList();
             return View();
         }
 
@@ -52,7 +55,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             if (ModelState.IsValid)
             {
                 agenda.AgendaID = Guid.NewGuid();
-                db.Agenda.Add(agenda);
+                db.Agendas.Add(agenda);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -67,7 +70,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Agenda agenda = db.Agenda.Find(id);
+            Agenda agenda = db.Agendas.Find(id);
             if (agenda == null)
             {
                 return HttpNotFound();
@@ -98,7 +101,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Agenda agenda = db.Agenda.Find(id);
+            Agenda agenda = db.Agendas.Find(id);
             if (agenda == null)
             {
                 return HttpNotFound();
@@ -111,8 +114,8 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
         {
-            Agenda agenda = db.Agenda.Find(id);
-            db.Agenda.Remove(agenda);
+            Agenda agenda = db.Agendas.Find(id);
+            db.Agendas.Remove(agenda);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -124,6 +127,15 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public ActionResult Buscar([Bind(Include = "DataAula")] DateTime? DataAula)
+        {
+            if (DataAula.HasValue)
+            {
+                return View("Index", db.Agendas.Where(o => DbFunctions.TruncateTime(o.DataAula) == DbFunctions.TruncateTime(DataAula.Value)).ToList());
+            }
+            return View("Index", db.Agendas.ToList());
         }
     }
 }

@@ -4,17 +4,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-
 <div class="row">
     <div class="col-md-12">
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="@Url.Action("Buscar", "Agenda")">
             <div class="form-group">
                 <div class="col-md-12">
                     <div class="input-group">
-                        <input type="date" class="form-control" placeholder="Insira a data para busca" />
+                        <input name="DataAula" type="date" class="form-control" placeholder="Insira a data para busca" />
                         <div class="input-group-btn">
-                            <button type="button" class="btn btn-primary" aria-label="Help">
+                            <button type="submit" class="btn btn-primary" aria-label="Help">
                                 <span class="glyphicon glyphicon-search"></span>
                             </button>
                         </div>
@@ -24,40 +22,52 @@
         </form>
     </div>
 </div>
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.DataAula)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao)
-                @* drop down list para aulas *@
-            </th>
-            <th></th>
-        </tr>
-    
-    @foreach (var item in Model) {
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DataAula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula.TipoAula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Professor.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            &nbsp;
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.DataAula)
             </td>
+            <th>
+                @Html.DisplayFor(model => item.Aula.TipoAula)
+            </th>
+            <th>
+                @Html.DisplayFor(model => item.Professor.Nome)
+            </th>
             <td>
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.AgendaID }) |
-                @Html.ActionLink("Details", "Details", new { id=item.AgendaID }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.AgendaID })
+                @Html.ActionLink("Edit", "Edit", new { id = item.AgendaID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.AgendaID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.AgendaID })
             </td>
         </tr>
     }
-    
-    </table>
+
+</table>
 </body>
 </html>

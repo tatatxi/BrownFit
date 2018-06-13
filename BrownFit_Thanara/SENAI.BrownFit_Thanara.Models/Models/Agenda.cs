@@ -31,15 +31,12 @@ namespace SENAI.BrownFit_Thanara.Models
 
         [DisplayName("Descrição da Aula: ")]
         [Column(TypeName = "varchar")]
+        [MaxLength(5000)]
         public string Descricao { get; set; }
 
-        public virtual List<Aluno> Alunos { get; set; }
+        public virtual List<AgendaAluno> Alunos { get; set; }
 
-        //Lista de Aulas que podem ter no dia
-        public virtual List<Aula> Aulas { get; set; }
-
-        //propriedade que apenas o perfil de personal poderá agendar aulas
-        //e quais campos estão na aula
+        public virtual Aula Aula { get; set; }
 
     }
 }

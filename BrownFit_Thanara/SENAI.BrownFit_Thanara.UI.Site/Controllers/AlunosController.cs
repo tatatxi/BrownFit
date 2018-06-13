@@ -45,6 +45,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             if (ModelState.IsValid)
             {
                 aluno.AlunoID = Guid.NewGuid();
+                aluno.DataCadastro = DateTime.Now;
                 db.Alunos.Add(aluno);
                 db.SaveChanges();
                 return RedirectToAction("Index");
