@@ -25,5 +25,11 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 
             return View();
         }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

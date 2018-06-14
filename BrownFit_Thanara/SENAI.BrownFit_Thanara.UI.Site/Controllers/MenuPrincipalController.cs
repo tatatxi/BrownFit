@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
-    [Authorize]
+    //[CustomAuthorize(Roles = "Admin, Personal, Recepcionista")]
     public class MenuPrincipalController : Controller
     {
         // GET: MenuPrincipal
@@ -86,8 +86,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         {
             return View();
         }
-
-
 
         // POST: MenuPrincipal/Delete/5
         [HttpPost]

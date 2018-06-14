@@ -1,17 +1,17 @@
-﻿using System;
+﻿using SENAI.BrownFit_Thanara.Data.Context;
+using SENAI.BrownFit_Thanara.Models;
+using SENAI.BrownFit_Thanara.Models.Models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using SENAI.BrownFit_Thanara.Data.Context;
-using SENAI.BrownFit_Thanara.Models;
-using System.Data.Entity.Core.Objects;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
+    //[CustomAuthorize(Roles = "Admin, Personal")]
     public class AgendaController : Controller
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
@@ -19,6 +19,13 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         // GET: Agenda
         public ActionResult Index()
         {
+            //var lst = db.Agendas
+            //    .Join(
+            //        db.Aulas,
+            //        agenda => agenda.Aula.AulaID,
+            //        aula => aula.AulaID,
+            //        (agenda, aula) => new { agenda }
+            //    ).ToList();
             return View(db.Agendas.ToList());
         }
 

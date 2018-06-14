@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
+    [Authorize(Roles = "random")]
     public class UsuarioPerfilsController : Controller
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
@@ -16,8 +17,9 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 
         public ActionResult Index()
         {
-            var usuariosPerfis = db.UsuariosPerfis.Include(u => u.Perfil).Include(u => u.Usuario);
-            return View(usuariosPerfis.ToList());
+            return View(usuarioPerfilsRepository.GetAll());
+            //     var usuariosPerfis = db.UsuariosPerfis.Include(u => u.Perfil).Include(u => u.Usuario);
+            //   return View(usuariosPerfis.ToList());
         }
 
         public ActionResult Details(Guid? id)
@@ -26,7 +28,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            UsuarioPerfil usuarioPerfil = db.UsuariosPerfis.Find(id);
+            UsuarioPerfil usuarioPerfil = usuarioPerfilsRepository.FindByID(id);
             if (usuarioPerfil == null)
             {
                 return HttpNotFound();
@@ -48,7 +50,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             if (ModelState.IsValid)
             {
                 usuarioPerfil.UsuarioPerfilId = Guid.NewGuid();
-                db.UsuariosPerfis.Add(usuarioPerfil);
+                usuarioPerfilsRepository.Create(usuarioPerfil);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -80,9 +82,11 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(usuarioPerfil).State = EntityState.Modified;
-                db.SaveChanges();
+                usuarioPerfilsRepository.Editar(usuarioPerfil);
                 return RedirectToAction("Index");
+                //  db.Entry(usuarioPerfil).State = EntityState.Modified;
+                // db.SaveChanges();
+           //     return RedirectToAction("Index");
             }
             ViewBag.PerfilId = new SelectList(db.Perfis, "PerfilId", "Nome", usuarioPerfil.PerfilId);
             ViewBag.UsuarioId = new SelectList(db.Usuarios, "UsuarioId", "Nome", usuarioPerfil.UsuarioId);
@@ -95,7 +99,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            UsuarioPerfil usuarioPerfil = db.UsuariosPerfis.Find(id);
+            UsuarioPerfil usuarioPerfil = usuarioPerfilsRepository.FindByID(id); ;
             if (usuarioPerfil == null)
             {
                 return HttpNotFound();
@@ -108,7 +112,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         public ActionResult DeleteConfirmed(Guid id)
         {
             UsuarioPerfil usuarioPerfil = db.UsuariosPerfis.Find(id);
-            db.UsuariosPerfis.Remove(usuarioPerfil);
+            usuarioPerfilsRepository.DeleteById(usuarioPerfil);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -17,11 +17,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View();
         }
 
-        public ActionResult Login()
-        {
-            return View();
-        }
-
         public ActionResult Entrar(UsuarioViewModel usuario)
         {
             if (ModelState.IsValid)
@@ -43,7 +38,8 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
                     return RedirectToAction("MenuPrincipal", "Home");
                 }
             }
-            return View();
+
+            return View("Index");
         }
 
         public ActionResult Logout()

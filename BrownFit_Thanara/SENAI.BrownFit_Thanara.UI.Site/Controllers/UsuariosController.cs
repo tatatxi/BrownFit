@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using SENAI.BrownFit_Thanara.Data.Context;
 using SENAI.BrownFit_Thanara.Models;
+using SENAI.BrownFit_Thanara.Data.Repositorios;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
@@ -15,10 +16,13 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
 
+        UsuarioRepository usuarioRepository = new UsuarioRepository();
+
         // GET: Usuarios
         public ActionResult Index()
         {
-            return View(db.Usuarios.ToList());
+            return View(usuarioRepository.GetAll());
+            //    return View(db.Usuarios.ToList());
         }
 
         // GET: Usuarios/Details/5
@@ -28,7 +32,8 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = db.Usuarios.Find(id);
+            Usuario usuario = usuarioRepository.FindById(id);
+            //         Usuario usuario = db.Usuarios.Find(id);
             if (usuario == null)
             {
                 return HttpNotFound();
@@ -47,12 +52,13 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "UsuarioId,Nome,Email,Senha,DataNascimento")] Usuario usuario)
+        //      public ActionResult Create([Bind(Include = "UsuarioId,Nome,Email,Senha,DataNascimento")] Usuario usuario)
+        public ActionResult Create([Bind(Include = "Email,Senha")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
                 usuario.UsuarioId = Guid.NewGuid();
-                db.Usuarios.Add(usuario);
+                usuarioRepository.Create(usuario);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -67,7 +73,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = db.Usuarios.Find(id);
+            Usuario usuario = usuarioRepository.FindById(id);
             if (usuario == null)
             {
                 return HttpNotFound();
@@ -84,7 +90,9 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(usuario).State = EntityState.Modified;
+                //     db.Entry(usuario).State = EntityState.Modified;
+                usuarioRepository.Editar(usuario);
+               //return RedirectToAction("Index");
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -98,7 +106,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = db.Usuarios.Find(id);
+            Usuario usuario = usuarioRepository.FindById(id);
             if (usuario == null)
             {
                 return HttpNotFound();
@@ -111,8 +119,8 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
         {
-            Usuario usuario = db.Usuarios.Find(id);
-            db.Usuarios.Remove(usuario);
+            Usuario usuario = usuarioRepository.FindById(id);
+            usuarioRepository.DeleteById(usuario);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

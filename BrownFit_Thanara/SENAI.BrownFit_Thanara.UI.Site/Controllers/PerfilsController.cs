@@ -17,7 +17,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         // GET: Perfils
         public ActionResult Index()
         {
-            return View(db.Perfis.ToList());
+            return View(perfilRepository.GetAll());
         }
 
         // GET: Perfils/Details/5
@@ -27,7 +27,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Perfil perfil = db.Perfis.Find(id);
+            Perfil perfil = perfilRepository.FindByID(id);
             if (perfil == null)
             {
                 return HttpNotFound();
@@ -51,7 +51,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             if (ModelState.IsValid)
             {
                 perfil.PerfilId = Guid.NewGuid();
-                db.Perfis.Add(perfil);
+                perfilRepository.Create(perfil);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -83,7 +83,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(perfil).State = EntityState.Modified;
+                perfilRepository.Editar(perfil);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -97,7 +97,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Perfil perfil = db.Perfis.Find(id);
+            Perfil perfil = perfilRepository.FindByID(id);
             if (perfil == null)
             {
                 return HttpNotFound();
@@ -111,7 +111,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         public ActionResult DeleteConfirmed(Guid id)
         {
             Perfil perfil = db.Perfis.Find(id);
-            db.Perfis.Remove(perfil);
+            perfilRepository.Delete(perfil);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
