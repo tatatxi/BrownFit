@@ -35,16 +35,16 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.Aula.AulaID, "Tipo de Aula:", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.DropDownListFor(model => model.Aula.AulaID, new SelectList(ViewBag.Aulas, "AulaID", "TipoAula"), "-- [SELECIONE] --", new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.Aula.AulaID, "", new { @class = "text-danger" })
+                    @Html.DropDownListFor(model => model.AulaID, new SelectList(ViewBag.Aulas, "AulaID", "TipoAula"), "-- [SELECIONE] --", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.AulaID, "", new { @class = "text-danger" })
                 </div>
             </div>
 
             <div class="form-group">
                 @Html.LabelFor(model => model.Professor.UsuarioId, "Professor:", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.DropDownListFor(model => model.Professor.UsuarioId, new SelectList(ViewBag.Professores, "UsuarioId", "Nome"), "-- [SELECIONE] --", new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.Professor.UsuarioId, "", new { @class = "text-danger" })
+                    @Html.DropDownListFor(model => model.UsuarioId, new SelectList(ViewBag.Professores, "UsuarioId", "Nome"), "-- [SELECIONE] --", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.UsuarioId, "", new { @class = "text-danger" })
                 </div>
             </div>
     

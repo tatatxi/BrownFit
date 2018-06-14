@@ -25,49 +25,50 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.DataAula)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Aula.TipoAula)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Professor.Nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Descricao)
-        </th>
-        <th>
-            &nbsp;
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
+<table class="table table-striped">
+    <thead>
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataAula)
-            </td>
             <th>
-                @Html.DisplayFor(model => item.Aula.TipoAula)
+                @Html.DisplayNameFor(model => model.DataAula)
             </th>
             <th>
-                @Html.DisplayFor(model => item.Professor.Nome)
+                @Html.DisplayNameFor(model => model.Aula.TipoAula)
             </th>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.AgendaID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.AgendaID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.AgendaID })
-            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.Professor.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                &nbsp;
+            </th>
         </tr>
-    }
-
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataAula)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Aula.TipoAula)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Professor.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.AgendaID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.AgendaID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.AgendaID })
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
 </body>
 </html>
