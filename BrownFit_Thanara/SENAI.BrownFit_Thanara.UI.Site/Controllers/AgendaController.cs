@@ -1,8 +1,6 @@
 ﻿using SENAI.BrownFit_Thanara.Data.Context;
 using SENAI.BrownFit_Thanara.Models;
-using SENAI.BrownFit_Thanara.Models.Models;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
@@ -16,20 +14,17 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
 
-        // GET: Agenda
         public ActionResult Index()
         {
-            //var lst = db.Agendas
-            //    .Join(
-            //        db.Aulas,
-            //        agenda => agenda.Aula.AulaID,
-            //        aula => aula.AulaID,
-            //        (agenda, aula) => new { agenda }
-            //    ).ToList();
-            return View(db.Agendas.ToList());
+            var lst = db.Agendas
+                .Join(
+                    db.Aulas,
+                    agenda => agenda.Aula.AulaID,
+                    aula => aula.AulaID,
+                    (agenda, aula) => new { agenda }).Select(x => x.agenda).ToList();
+            return View(lst);
         }
 
-        // GET: Agenda/Details/5
         public ActionResult Details(Guid? id)
         {
             if (id == null)
@@ -44,7 +39,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(agenda);
         }
 
-        // GET: Agenda/Create
         public ActionResult Create()
         {
             ViewBag.Aulas = db.Aulas.ToList();
@@ -52,12 +46,9 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View();
         }
 
-        // POST: Agenda/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AgendaID,DataAula,Descricao")] Agenda agenda)
+        public ActionResult Create([Bind(Include = "AgendaID,DataAula,AulaID,UsuarioId,Descricao")] Agenda agenda)
         {
             if (ModelState.IsValid)
             {
@@ -70,7 +61,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(agenda);
         }
 
-        // GET: Agenda/Edit/5
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
@@ -85,12 +75,9 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(agenda);
         }
 
-        // POST: Agenda/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AgendaID,DataAula,Descricao")] Agenda agenda)
+        public ActionResult Edit([Bind(Include = "AgendaID,DataAula,AulaID,UsuarioId,Descricao")] Agenda agenda)
         {
             if (ModelState.IsValid)
             {
@@ -101,7 +88,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(agenda);
         }
 
-        // GET: Agenda/Delete/5
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
@@ -116,7 +102,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(agenda);
         }
 
-        // POST: Agenda/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)

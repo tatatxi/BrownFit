@@ -1,9 +1,10 @@
 ﻿using SENAI.BrownFit_Thanara.Models;
-using SENAI.BrownFit_Thanara.Models.Models;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Data.Entity.Validation;
 using System.Linq;
+using System.Text;
 
 namespace SENAI.BrownFit_Thanara.Data.Context
 {
@@ -27,25 +28,48 @@ namespace SENAI.BrownFit_Thanara.Data.Context
 
         public DbSet<Aula> Aulas { get; set; }
 
+        public DbSet<AgendaAluno> AgendaAlunos { get; set; }
+
         public override int SaveChanges()
         {
-            //Faz um foreach na classes e verifica qual classe possui uma propriedade
-            //chamada DataCadastro.
-            foreach (var entry in ChangeTracker.Entries().Where(entry =>
-            entry.Entity.GetType().GetProperty("DataCadastro") != null))
+            try
             {
-                if (entry.State == EntityState.Added)
-                {  //Se estou adicionando no banco, a DataCadastro recebe DateTime.Now
-                    entry.Property("DataCadastro").CurrentValue = DateTime.Now;
+                //Faz um foreach na classes e verifica qual classe possui uma propriedade chamada DataCadastro.
+                foreach (var entry in ChangeTracker.Entries().Where(entry =>
+                entry.Entity.GetType().GetProperty("DataCadastro") != null))
+                {
+                    if (entry.State == EntityState.Added)
+                    {  //Se estou adicionando no banco, a DataCadastro recebe DateTime.Now
+                        entry.Property("DataCadastro").CurrentValue = DateTime.Now;
+                    }
+
+                    if (entry.State == EntityState.Modified)
+                    {   //Se estou efetuando um Update eu não altero a DataCadastro.
+                        entry.Property("DataCadastro").IsModified = false;
+                    }
                 }
 
-                if (entry.State == EntityState.Modified)
-                {   //Se estou efetuando um Update eu não altero a DataCadastro.
-                    entry.Property("DataCadastro").IsModified = false;
-                }
+                return base.SaveChanges();
             }
+            catch (DbEntityValidationException ex)
+            {
+                var sb = new StringBuilder();
 
-            return base.SaveChanges();
+                foreach (var failure in ex.EntityValidationErrors)
+                {
+                    sb.AppendFormat("{0} failed validation\n", failure.Entry.Entity.GetType());
+                    foreach (var error in failure.ValidationErrors)
+                    {
+                        sb.AppendFormat("- {0} : {1}", error.PropertyName, error.ErrorMessage);
+                        sb.AppendLine();
+                    }
+                }
+
+                throw new DbEntityValidationException(
+                    "Entity Validation Failed - errors follow:\n" +
+                    sb.ToString(), ex
+                );
+            }
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

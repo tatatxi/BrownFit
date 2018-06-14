@@ -1,10 +1,9 @@
-﻿using SENAI.BrownFit_Thanara.Models.Models;
+﻿using SENAI.BrownFit_Thanara.Data.Context;
+using SENAI.BrownFit_Thanara.Models;
 using System;
-using System.Data.Entity;
 using System.Data.Entity.Migrations;
-using System.Linq;
 
-internal sealed class Configuration : DbMigrationsConfiguration<SENAI.BrownFit_Thanara.Data.Context.Brown_ThanaraContext>
+internal sealed class Configuration : DbMigrationsConfiguration<Brown_ThanaraContext>
 {
     public Configuration()
     {
@@ -12,8 +11,22 @@ internal sealed class Configuration : DbMigrationsConfiguration<SENAI.BrownFit_T
         AutomaticMigrationDataLossAllowed = true;
     }
 
-    protected override void Seed(SENAI.BrownFit_Thanara.Data.Context.Brown_ThanaraContext context)
+    protected override void Seed(Brown_ThanaraContext context)
     {
+        context.Perfis.AddOrUpdate(
+            p => p.Nome,
+            new Perfil { PerfilId = Guid.NewGuid(), Nome = "Admin" },
+            new Perfil { PerfilId = Guid.NewGuid(), Nome = "Recepcionista" },
+            new Perfil { PerfilId = Guid.NewGuid(), Nome = "Personal" }
+        );
+
+        context.Usuarios.AddOrUpdate(
+            p => p.Email,
+            new Usuario { UsuarioId = Guid.NewGuid(), Nome = "Admin", Email = "admin@email.com", Senha = "1234", DataNascimento = DateTime.Now },
+            new Usuario { UsuarioId = Guid.NewGuid(), Nome = "Recepcionista", Email = "recepcionista@email.com", Senha = "1234", DataNascimento = DateTime.Now },
+            new Usuario { UsuarioId = Guid.NewGuid(), Nome = "Personal", Email = "personal@email.com", Senha = "1234", DataNascimento = DateTime.Now }
+        );
+
         context.Aulas.AddOrUpdate(
             p => p.TipoAula,
             new Aula { AulaID = Guid.NewGuid(), TipoAula = "Aeróbico", Descricao = "tipo de atividade física que através de movimentos rápidos e ritmados provoca a oxigenação das células musculares e elevado gasto calórico" },

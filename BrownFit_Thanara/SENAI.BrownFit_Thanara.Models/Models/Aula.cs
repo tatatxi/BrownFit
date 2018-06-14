@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SENAI.BrownFit_Thanara.Models.Models
+namespace SENAI.BrownFit_Thanara.Models
 {
     [Table("Aulas")]
     public class Aula

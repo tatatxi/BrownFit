@@ -1,12 +1,8 @@
-﻿using SENAI.BrownFit_Thanara.Models.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SENAI.BrownFit_Thanara.Models
 {
@@ -27,6 +23,10 @@ namespace SENAI.BrownFit_Thanara.Models
         [Column(TypeName = "DateTime")]
         public DateTime DataAula { get; set; }
 
+        public Guid AulaID { get; set; }
+        public Guid UsuarioId { get; set; }
+
+        public virtual Aula Aula { get; set; }
         public virtual Usuario Professor { get; set; }
 
         [DisplayName("Descrição da Aula: ")]
@@ -35,8 +35,5 @@ namespace SENAI.BrownFit_Thanara.Models
         public string Descricao { get; set; }
 
         public virtual List<AgendaAluno> Alunos { get; set; }
-
-        public virtual Aula Aula { get; set; }
-
     }
 }

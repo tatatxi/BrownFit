@@ -9,25 +9,21 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
     //[CustomAuthorize(Roles = "Admin, Personal, Recepcionista")]
     public class MenuPrincipalController : Controller
     {
-        // GET: MenuPrincipal
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: MenuPrincipal/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: MenuPrincipal/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: MenuPrincipal/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -43,13 +39,11 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             }
         }
 
-        // GET: MenuPrincipal/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: MenuPrincipal/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -65,7 +59,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             }
         }
 
-        //METODO DE REDIRECIONAMENTO PARA AÇÃO NECESSÁRIA
         [HttpPost]
         public ActionResult RedirecionarAcaoAluno()
         {
@@ -81,13 +74,11 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             }
         }
 
-        // GET: MenuPrincipal/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: MenuPrincipal/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

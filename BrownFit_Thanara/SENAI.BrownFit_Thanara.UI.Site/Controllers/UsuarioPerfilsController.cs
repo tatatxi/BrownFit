@@ -9,7 +9,6 @@ using System.Web.Mvc;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
-    [Authorize(Roles = "random")]
     public class UsuarioPerfilsController : Controller
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
@@ -18,8 +17,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         public ActionResult Index()
         {
             return View(usuarioPerfilsRepository.GetAll());
-            //     var usuariosPerfis = db.UsuariosPerfis.Include(u => u.Perfil).Include(u => u.Usuario);
-            //   return View(usuariosPerfis.ToList());
         }
 
         public ActionResult Details(Guid? id)
@@ -86,7 +83,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
                 return RedirectToAction("Index");
                 //  db.Entry(usuarioPerfil).State = EntityState.Modified;
                 // db.SaveChanges();
-           //     return RedirectToAction("Index");
+                //     return RedirectToAction("Index");
             }
             ViewBag.PerfilId = new SelectList(db.Perfis, "PerfilId", "Nome", usuarioPerfil.PerfilId);
             ViewBag.UsuarioId = new SelectList(db.Usuarios, "UsuarioId", "Nome", usuarioPerfil.UsuarioId);

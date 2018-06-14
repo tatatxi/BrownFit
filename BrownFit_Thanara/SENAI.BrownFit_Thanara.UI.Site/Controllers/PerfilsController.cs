@@ -14,13 +14,11 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
         PerfilRepository perfilRepository = new PerfilRepository();
 
-        // GET: Perfils
         public ActionResult Index()
         {
             return View(perfilRepository.GetAll());
         }
 
-        // GET: Perfils/Details/5
         public ActionResult Details(Guid? id)
         {
             if (id == null)
@@ -35,15 +33,11 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(perfil);
         }
 
-        // GET: Perfils/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Perfils/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "PerfilId,Nome")] Perfil perfil)
@@ -59,7 +53,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(perfil);
         }
 
-        // GET: Perfils/Edit/5
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
@@ -74,9 +67,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(perfil);
         }
 
-        // POST: Perfils/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "PerfilId,Nome")] Perfil perfil)
@@ -90,7 +80,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(perfil);
         }
 
-        // GET: Perfils/Delete/5
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
@@ -105,7 +94,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(perfil);
         }
 
-        // POST: Perfils/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
