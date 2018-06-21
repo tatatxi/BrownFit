@@ -30,7 +30,7 @@ namespace SENAI.BrownFit_Thanara.Models
         [DisplayName("Sobrenome: ")]
         public string Sobrenome { get; set; }
 
-        [StringLength(11, MinimumLength = 11)]
+        [StringLength(14, MinimumLength = 14)]
         [Required(ErrorMessage = "O CPF é obrigatório.")]
         [Column(TypeName = "varchar")]
         public string CPF { get; set; }

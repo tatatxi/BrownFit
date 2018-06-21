@@ -5,6 +5,7 @@ using System.Net;
 using System.Web.Mvc;
 using SENAI.BrownFit_Thanara.Data.Context;
 using SENAI.BrownFit_Thanara.Models;
+using SENAI.BrownFit_Thanara.Util.Extensoes;
 
 namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 {
@@ -15,7 +16,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 
         public ActionResult Index()
         {
-            return View(db.Alunos.ToList());
+            return View(db.Alunos.Where(a => !a.Excluido).ToList());
         }
 
         public ActionResult Details(Guid? id)
@@ -43,10 +44,17 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (!aluno.CPF.ValidarCPF())
+                {
+                    ViewBag.MsgErro = "CPF inválido!";
+                    return View("Create");
+                }
+
                 aluno.AlunoID = Guid.NewGuid();
                 aluno.DataCadastro = DateTime.Now;
                 db.Alunos.Add(aluno);
                 db.SaveChanges();
+
                 return RedirectToAction("Index");
             }
 
@@ -99,7 +107,8 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
         public ActionResult DeleteConfirmed(Guid id)
         {
             Aluno aluno = db.Alunos.Find(id);
-            db.Alunos.Remove(aluno);
+            aluno.Excluido = true;
+            //db.Alunos.Remove(aluno);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
