@@ -25,18 +25,21 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 
                 var usuarioAutenticado = usuarioRepository.Login(usuario.Email, usuario.Senha);
 
-                if (usuarioAutenticado != null)
+                if (usuarioAutenticado == null)
                 {
-                    var permissoes = usuarioRepository.RetornarPermissoes(usuarioAutenticado.UsuarioId);
-
-                    FormsAuthentication.SetAuthCookie(usuarioAutenticado.Email, false);
-                    var authTicket = new FormsAuthenticationTicket(1, usuarioAutenticado.Email, DateTime.Now, DateTime.Now.AddHours(24), false, permissoes);
-                    string encryptedTicket = FormsAuthentication.Encrypt(authTicket);
-                    var authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket);
-                    HttpContext.Response.Cookies.Add(authCookie);
-
-                    return RedirectToAction("MenuPrincipal", "Home");
+                    ViewBag.MsgErro = "Login ou senha inválido!";
+                    return View("Index");
                 }
+
+                var permissoes = usuarioRepository.RetornarPermissoes(usuarioAutenticado.UsuarioId);
+
+                FormsAuthentication.SetAuthCookie(usuarioAutenticado.Email, false);
+                var authTicket = new FormsAuthenticationTicket(1, usuarioAutenticado.Email, DateTime.Now, DateTime.Now.AddHours(24), false, permissoes);
+                string encryptedTicket = FormsAuthentication.Encrypt(authTicket);
+                var authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket);
+                HttpContext.Response.Cookies.Add(authCookie);
+
+                return RedirectToAction("MenuPrincipal", "Home");
             }
 
             return View("Index");
