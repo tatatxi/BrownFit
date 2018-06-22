@@ -62,18 +62,18 @@ namespace SENAI.BrownFit_Thanara.Models
 
         [Required(ErrorMessage = "Peso é obrigatório.")]
         [DisplayName("Peso: ")]
-        [Column(TypeName = "varchar")]
-        public string Peso { get; set; }
+        [Column(TypeName = "decimal")]
+        public decimal Peso { get; set; }
 
         [Required(ErrorMessage = "Altura é obrigatório.")]
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "decimal")]
         [DisplayName("Altura: ")]
-        public string Altura { get; set; }
+        public decimal Altura { get; set; }
 
         [Required(ErrorMessage = "Massa corporal é obrigatório.")]
         [DisplayName("Massa Corporal: ")]
-        [Column(TypeName = "varchar")]
-        public string MassaMagra { get; set; }
+        [Column(TypeName = "decimal")]
+        public decimal MassaMagra { get; set; }
 
         [DisplayName("Tipo de Treino: ")]
         [Column(TypeName = "varchar")]
