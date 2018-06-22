@@ -166,7 +166,7 @@
     <Compile Include="Controllers\PerfilsController.cs" />
     <Compile Include="Controllers\UsuarioPerfilsController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
-    <Compile Include="CustomAuthorize.cs" />
+    <Compile Include="CustomAuthorizeAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -254,6 +254,7 @@
     <Content Include="Views\Agenda\Details.cshtml" />
     <Content Include="Views\Agenda\Edit.cshtml" />
     <Content Include="Views\Agenda\Index.cshtml" />
+    <Content Include="Views\Shared\AuthorizeFailed.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

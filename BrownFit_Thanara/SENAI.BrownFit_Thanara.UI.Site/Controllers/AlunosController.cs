@@ -88,6 +88,17 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
             return View(aluno);
         }
 
+
+        //arrumar
+        //public ActionResult Buscar([Bind(Include = "Nome")] Aluno? Nome)
+        //{
+        //    if (Nome.HasValue)
+        //    {
+        //        return View("Index", db.Alunos.Where(o => DbFunctions.(o.Nome) == DbFunctions.(aluno.Value).ToList()));
+        //    }
+        //    return View("Index", db.Alunos.ToList());
+        //}
+
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
