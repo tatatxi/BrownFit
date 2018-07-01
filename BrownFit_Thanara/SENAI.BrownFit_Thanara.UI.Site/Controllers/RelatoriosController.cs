@@ -71,7 +71,7 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
 
         public ActionResult Download(string fileName)
         {
-            var fullName = Path.Combine(Server.MapPath(string.Format("~/Uploads/{0:yyyyMMdd}", DateTime.Now)), fileName);
+            var fullName = Path.Combine(Server.MapPath("~/Uploads"), fileName);
             string contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
             return File(fullName, contentType, fileName);
         }
