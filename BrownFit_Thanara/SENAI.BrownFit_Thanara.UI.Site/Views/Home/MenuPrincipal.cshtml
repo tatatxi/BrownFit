@@ -2,49 +2,40 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>MenuPrincipal</title>
-</head>
-<body>
-    <div>
-        <div class="row">
-            <br />
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <img src="~/Images/BrownFit.PNG" />
-                <hr />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <form action="@Url.Action("Home", "MenuPrincipal")" class="form-horizontal">
-                    <div class="form-group">
-                        <div class="col-md-12 text-center">
-                            <h2>Menu Principal</h2>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <center>
-                            <div class="col-md-12 img-circle">
-                                <a href="@Url.Action("Index", "Agenda")">
-                                    <img src="~/Images/agenda.png" height="200" width="150" style="border: 1px solid black" />
-                                </a>
-                                <a href="@Url.Action("Index", "Alunos")">
-                                    <img src="~/Images/alunos.png" height="250" width="200" style="border: 1px solid black" />
-                                </a>
-                                <a href="@Url.Action("Index", "Relatorios")">
-                                    <img src="~/Images/grafico.png" height="200" width="150" style="border: 1px solid black" />
-                                </a>
-                        </center>
-                    </div>
-            </div>
+<div>
+    <div class="row">
+        <br />
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="~/Images/BrownFit.PNG" />
+            <hr />
         </div>
     </div>
-    </form>
-</body>
-</html>
+    <div class="row">
+        <div class="col-md-12">
+            <form action="@Url.Action("Home", "MenuPrincipal")" class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-12 text-center">
+                        <h2>Menu Principal</h2>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <center>
+                        <div class="col-md-12 img-circle">
+                            <a href="@Url.Action("Index", "Agenda")">
+                                <img src="~/Images/agenda.png" height="200" width="150" style="border: 1px solid black" />
+                            </a>
+                            <a href="@Url.Action("Index", "Alunos")">
+                                <img src="~/Images/alunos.png" height="250" width="200" style="border: 1px solid black" />
+                            </a>
+                            <a href="@Url.Action("GerarRelatorio", "Relatorios")">
+                                <img src="~/Images/grafico.png" height="200" width="150" style="border: 1px solid black" />
+                            </a>
+                        </div>
+                    </center>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

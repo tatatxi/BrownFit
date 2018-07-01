@@ -14,8 +14,6 @@ namespace SENAI.BrownFit_Thanara.UI.Site.Controllers
     {
         private Brown_ThanaraContext db = new Brown_ThanaraContext();
 
-
-        [CustomAuthorize(Roles = "Admin, Personal")]
         public ActionResult Index()
         {
             var lst = db.Agendas

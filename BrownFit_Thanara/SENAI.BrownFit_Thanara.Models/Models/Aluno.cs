@@ -30,9 +30,10 @@ namespace SENAI.BrownFit_Thanara.Models
         [DisplayName("Sobrenome: ")]
         public string Sobrenome { get; set; }
 
-        [StringLength(14, MinimumLength = 14)]
+        [StringLength(20, MinimumLength = 10)]
         [Required(ErrorMessage = "O CPF é obrigatório.")]
         [Column(TypeName = "varchar")]
+        [DisplayName("CPF: ")]
         public string CPF { get; set; }
 
         [StringLength(100, MinimumLength = 5)]
@@ -46,18 +47,16 @@ namespace SENAI.BrownFit_Thanara.Models
         [DisplayName("Data de Nascimento: ")]
         public DateTime DataNascimento { get; set; }
 
-
         [DataType(DataType.Date)]
         [DisplayName("Data de Cadastro: ")]
         public DateTime DataCadastro { get; set; }
-
 
         [DisplayName("Situação: ")]
         public bool Ativo { get; set; }
 
         public bool Excluido { get; set; }
 
-        [StringLength(15, MinimumLength = 2)]
+        [StringLength(100, MinimumLength = 0)]
         public string Permissao { get; set; }
 
         [Required(ErrorMessage = "Peso é obrigatório.")]
@@ -70,7 +69,6 @@ namespace SENAI.BrownFit_Thanara.Models
         [DisplayName("Altura: ")]
         public decimal Altura { get; set; }
 
-        [Required(ErrorMessage = "Massa corporal é obrigatório.")]
         [DisplayName("Massa Corporal: ")]
         [Column(TypeName = "decimal")]
         public decimal MassaMagra { get; set; }
